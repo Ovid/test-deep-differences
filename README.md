@@ -147,6 +147,12 @@ structures and anything in the `Got` structure which matches the `Expected`
 structure is simply copied to it. This means the resulting diff only shows
 items which do not match.
 
+# SEE ALSO
+
+- [Test::Deep](https://metacpan.org/pod/Test%3A%3ADeep)
+- [Test::Differences](https://metacpan.org/pod/Test%3A%3ADifferences)
+- [Test2::Tools::Compare](https://metacpan.org/pod/Test2%3A%3ATools%3A%3ACompare)
+
 # AUTHOR
 
 Curtis "Ovid" Poe <curtis.poe@gmail.com>

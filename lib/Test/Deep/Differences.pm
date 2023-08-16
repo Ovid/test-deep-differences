@@ -302,3 +302,15 @@ structures and anything in the C<Got> structure which matches the C<Expected>
 structure is simply copied to it. This means the resulting diff only shows
 items which do not match.
 
+=head1 SEE ALSO
+
+=over 4
+
+=item * L<Test::Deep>
+
+=item * L<Test::Differences>
+
+=item * L<Test2::Tools::Compare>
+
+=back
+
