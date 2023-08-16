@@ -20,17 +20,13 @@ cmp_diff( $have, $want, "data structures match" );
 
 # DESCRIPTION
 
-This module exports a single function, `cmp_diff()`, which compares two data
-structures just like `cmp_deeply()` from [Test::Deep](https://metacpan.org/pod/Test%3A%3ADeep) does. However, if the
-values _match_, it recursively replaces wanted values with the actual values.
-This is useful for testing functions that return data structures with lots of
-matches against `Test::Deep` functions because the resulting diff doesn't
-have false negatives when an integer fails to match `re_int`, something fails
-to match 'ignore()', and so on.
+This module provides `cmp_diff()`, which compares two data structures just
+like `cmp_deeply()` from [Test::Deep](https://metacpan.org/pod/Test%3A%3ADeep) does. However, if the test fails, it
+provides a useful diff between the two data structures.
 
 Note that if the `cmp_diff()` call succeeds, it will be as fast as
-`cmp_deeply()`.  If it fails, it will be slower because it needs to
-recursively walk the data structure.
+`cmp_deeply()`. If it fails, it will be slower because it needs to clone and
+recursively walk the data structures.
 
 # FUNCTIONS
 

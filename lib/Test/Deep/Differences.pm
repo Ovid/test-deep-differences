@@ -189,17 +189,13 @@ __END__
 
 =head1 DESCRIPTION
 
-This module exports a single function, C<cmp_diff()>, which compares two data
-structures just like C<cmp_deeply()> from L<Test::Deep> does. However, if the
-values I<match>, it recursively replaces wanted values with the actual values.
-This is useful for testing functions that return data structures with lots of
-matches against C<Test::Deep> functions because the resulting diff doesn't
-have false negatives when an integer fails to match C<re_int>, something fails
-to match 'ignore()', and so on.
+This module provides C<cmp_diff()>, which compares two data structures just
+like C<cmp_deeply()> from L<Test::Deep> does. However, if the test fails, it
+provides a useful diff between the two data structures.
 
 Note that if the C<cmp_diff()> call succeeds, it will be as fast as
-C<cmp_deeply()>.  If it fails, it will be slower because it needs to
-recursively walk the data structure.
+C<cmp_deeply()>. If it fails, it will be slower because it needs to clone and
+recursively walk the data structures.
 
 =head1 FUNCTIONS
 
