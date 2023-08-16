@@ -38,11 +38,11 @@ All functions are exported on demand.
 cmp_diff( $got, $expected, $name ); 
 ```
 
-Compares two data structures and the test passes if they match. Returns true
-if the test passes.
+Compares two data structures and if they match, the test passes and the
+function returns true.
 
-If it fails, it shows a diff between the two data structures, as explained
-below.
+If it fails, it returns false and will `diag` a diff between the two data
+structures, as explained below.
 
 ## `get_diff( $got, $expected )`
 
