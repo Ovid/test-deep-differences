@@ -220,7 +220,7 @@ explained below.
 
 =head1 BEFORE AND AFTER
 
-With C<cmp_deeply>, we can take data like this:
+With L<Test::Deep>'s C<cmp_deeply>, we can take data like this:
 
     my $have = {
         foo   => 1,

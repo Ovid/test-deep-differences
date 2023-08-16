@@ -55,7 +55,7 @@ explained below.
 
 # BEFORE AND AFTER
 
-With `cmp_deeply`, we can take data like this:
+With [Test::Deep](https://metacpan.org/pod/Test%3A%3ADeep)'s `cmp_deeply`, we can take data like this:
 
 ```perl
 my $have = {
